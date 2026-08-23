@@ -1,0 +1,50 @@
+{
+  "name": "@frankxai/family-history-atlas",
+  "version": "0.1.0",
+  "description": "An evidence-aware, privacy-first family tree and history visualization built with Next.js and GSAP.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "src/atlas",
+    "src/components",
+    "src/app/globals.css"
+  ],
+  "exports": {
+    "./engine": "./src/atlas/index.ts",
+    "./experience": "./src/components/AtlasExperience.tsx",
+    "./styles.css": "./src/app/globals.css"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "pnpm lint && pnpm typecheck && pnpm test"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.2.8",
+    "@fontsource-variable/newsreader": "5.2.8",
+    "@gsap/react": "2.1.2",
+    "gsap": "3.15.0",
+    "lucide-react": "0.544.0",
+    "next": "16.3.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "10.0.2",
+    "eslint-config-next": "16.3.2",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "packageManager": "pnpm@11.5.0"
+}

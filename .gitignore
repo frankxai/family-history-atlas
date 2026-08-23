@@ -1,0 +1,19 @@
+.next/
+node_modules/
+coverage/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+
+# Real genealogy data never belongs in this public repository.
+*.ged
+*.gedcom
+*.gedzip
+private-data/
+imports/
+exports/
