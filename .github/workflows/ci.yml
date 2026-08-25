@@ -33,8 +33,8 @@ jobs:
         with:
           node-version: 24
 
-      - name: Install exact direct dependencies
-        run: pnpm install --no-frozen-lockfile
+      - name: Install pinned direct dependencies without lifecycle scripts
+        run: pnpm install --no-frozen-lockfile --ignore-scripts
 
       - name: Lint, typecheck, and test
         run: pnpm check
