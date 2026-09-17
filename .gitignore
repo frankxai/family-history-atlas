@@ -17,3 +17,5 @@ Thumbs.db
 private-data/
 imports/
 exports/
+
+.vercel
